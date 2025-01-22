@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="'Dear ' + ${fullName} +','"></h2>
+    <p>Thank you for signing in!</p>
+    <p>Please use the following code to activate your account:</p>
+    <h3 th:text="${activation_code}"></h3>
+    <p>You can also activate your account using the link below:</p>
+    <p><a th:href="${confirmationUrl}" class="button">Activate Account</a></p>
+    <p>If you have any questions, feel free to reach out to us.</p>
+</div>
+</body>
+</html>
