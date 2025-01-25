@@ -1,4 +1,4 @@
-package auth;
+package com.bsn.book_network.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

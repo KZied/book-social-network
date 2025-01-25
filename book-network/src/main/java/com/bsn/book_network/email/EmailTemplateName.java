@@ -1,4 +1,4 @@
-package email;
+package com.bsn.book_network.email;
 
 import lombok.Getter;
 

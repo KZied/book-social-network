@@ -1,4 +1,4 @@
-package auth;
+package com.bsn.book_network.auth;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.mail.MessagingException;

@@ -1,4 +1,4 @@
-package security;
+package com.bsn.book_network.security;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import user.UserRepository;
+import com.bsn.book_network.user.UserRepository;
 
 @Service
 @RequiredArgsConstructor

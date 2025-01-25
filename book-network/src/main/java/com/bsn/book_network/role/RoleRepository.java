@@ -1,4 +1,4 @@
-package role;
+package com.bsn.book_network.role;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

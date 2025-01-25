@@ -1,5 +1,6 @@
-package user;
+package com.bsn.book_network.user;
 
+import com.bsn.book_network.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -8,7 +9,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import role.Role;
 
 import java.security.Principal;
 import java.time.LocalDate;

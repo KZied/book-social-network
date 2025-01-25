@@ -1,17 +1,17 @@
-package auth;
+package com.bsn.book_network.auth;
 
-import email.EmailService;
-import email.EmailTemplateName;
+import com.bsn.book_network.role.RoleRepository;
+import com.bsn.book_network.email.EmailService;
+import com.bsn.book_network.email.EmailTemplateName;
 import jakarta.mail.MessagingException;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import role.RoleRepository;
-import user.Token;
-import user.TokenRepository;
-import user.User;
-import user.UserRepository;
+import com.bsn.book_network.user.Token;
+import com.bsn.book_network.user.TokenRepository;
+import com.bsn.book_network.user.User;
+import com.bsn.book_network.user.UserRepository;
 
 import java.security.SecureRandom;
 import java.time.LocalDateTime;

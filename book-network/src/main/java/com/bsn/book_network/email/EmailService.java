@@ -1,4 +1,4 @@
-package email;
+package com.bsn.book_network.email;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

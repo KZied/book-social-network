@@ -1,4 +1,4 @@
-package security;
+package com.bsn.book_network.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

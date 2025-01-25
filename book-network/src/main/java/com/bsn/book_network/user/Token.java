@@ -1,4 +1,4 @@
-package user;
+package com.bsn.book_network.user;
 
 import jakarta.persistence.*;
 import lombok.*;

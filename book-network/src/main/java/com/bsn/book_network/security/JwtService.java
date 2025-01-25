@@ -1,4 +1,4 @@
-package security;
+package com.bsn.book_network.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
