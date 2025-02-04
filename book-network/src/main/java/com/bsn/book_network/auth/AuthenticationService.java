@@ -66,6 +66,7 @@ public class AuthenticationService {
                 .token(generatedToken)
                 .createdAt(LocalDateTime.now())
                 .expiresAt(LocalDateTime.now().plusMinutes(15))
+                .user(user)
                 .build();
         tokenRepository.save(token);
         return generatedToken;
