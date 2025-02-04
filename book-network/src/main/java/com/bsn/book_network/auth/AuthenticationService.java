@@ -4,7 +4,7 @@ import com.bsn.book_network.role.RoleRepository;
 import com.bsn.book_network.email.EmailService;
 import com.bsn.book_network.email.EmailTemplateName;
 import jakarta.mail.MessagingException;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AuthenticationService {
 
     private final RoleRepository roleRepository;
