@@ -1,5 +1,7 @@
 package com.bsn.book_network.user;
 
+import com.bsn.book_network.book.Book;
+import com.bsn.book_network.history.BookTransactionHistory;
 import com.bsn.book_network.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -39,15 +41,21 @@ public class User implements UserDetails, Principal {
     private boolean accountLocked;
     private boolean enabled;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Role> roles;
+
+    @OneToMany(mappedBy = "owner")
+    private List<Book> books;
+
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
+
     @CreatedDate
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdDate;
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
-
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Role> roles;
 
 
     @Override
