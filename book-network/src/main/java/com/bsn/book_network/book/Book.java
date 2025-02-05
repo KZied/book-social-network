@@ -1,21 +1,18 @@
 package com.bsn.book_network.book;
 
-import jakarta.persistence.*;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
-import java.time.LocalDateTime;
+import com.bsn.book_network.common.BaseEntity;
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@EntityListeners(AuditingEntityListener.class)
-public class Book {
-
-    @Id
-    @GeneratedValue
-    private Integer id;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Book extends BaseEntity {
 
     private String title;
 
@@ -31,20 +28,5 @@ public class Book {
 
     private boolean shareable;
 
-    @CreatedDate
-    @Column(nullable = false, updatable = false)
-    private LocalDateTime createdDate;
-
-    @LastModifiedDate
-    @Column(insertable = false)
-    private LocalDateTime lastModifiedDate;
-
-    @CreatedBy
-    @Column(nullable = false, updatable = false)
-    private Integer createdBy;
-
-    @LastModifiedBy
-    @Column(insertable = false)
-    private Integer lastModifiedBy;
 
 }
