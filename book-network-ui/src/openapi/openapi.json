@@ -692,7 +692,7 @@
         "required": [
           "email",
           "firstname",
-          "lastName",
+          "lastname",
           "password"
         ],
         "type": "object",
@@ -700,7 +700,7 @@
           "firstname": {
             "type": "string"
           },
-          "lastName": {
+          "lastname": {
             "type": "string"
           },
           "email": {
